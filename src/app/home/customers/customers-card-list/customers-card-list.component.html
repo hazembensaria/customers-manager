@@ -1,0 +1,10 @@
+<div class="father">
+<div  *ngFor="let customerEl of cust">
+    <img style="width: 100px ; height: 100px;" src={{customerEl.image}}>
+    <p> <span>nom</span> :{{customerEl.nom}}</p>
+    <p><span>prenom</span> : {{customerEl.prenom}}</p>
+    <p><span> tel</span>: {{customerEl.numtel}}</p>
+    <p> <span>ville </span>:{{customerEl.ville}}</p>
+    <hr>
+</div>
+</div>

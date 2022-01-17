@@ -1,0 +1,43 @@
+
+<app-header></app-header>
+
+<div class="header">
+ <div>
+     home
+ </div>
+</div>
+ 
+    <form  #customers="ngForm" novalidate>
+   <div class="container">
+       <div class="father">
+           <h1>add new custumor </h1>
+           <div class="info">
+               <input  type="email" required #nom="ngModel" [class.is-invalid]="nom.invalid && nom.touched"  name="nom" [(ngModel)]="customer.nom">
+               <small  class="text-danger" [class.d-none]="nom.valid || nom.untouched">Le mail est obligatoire</small>
+               <input #prenom="ngModel" required type="text" name="prenom" placeholder="prenom" [(ngModel)]="customer.prenom">
+               <small  class="text-danger" [class.d-none]="prenom.valid || prenom.untouched">Le mot de passe est obligatoire</small>
+
+               <input #numtel="ngModel" required type="text" name="numtel" placeholder="num telephone" [(ngModel)]="customer.numtel">
+               <small  class="text-danger" [class.d-none]="numtel.valid || numtel.untouched">Le mot de passe est obligatoire</small>
+
+               <input #ville="ngModel" required type="text" name="ville" placeholder="ville" [(ngModel)]="customer.ville">
+               <small  class="text-danger" [class.d-none]="ville.valid || ville.untouched">Le mot de passe est obligatoire</small>
+
+  
+               <!-- <small  class="text-danger" [class.d-none]="image.valid || image.untouched">Le mot de passe est obligatoire</small> -->
+               <!-- <input #role type="text" name="role" placeholder="role" [(ngModel)]="user.role"> -->
+               <div>
+                   
+                <button class="btn btn-primary"   type="button" [disabled]="customers.form.invalid"(click)="onsubmit()"> add </button>
+             
+               <!-- <button (click)="addUser(email.value,password.value,role.value)">s'inscrire</button> -->
+            </div>
+           </div>
+       
+           
+       </div>
+   </div>
+</form>
+
+
+

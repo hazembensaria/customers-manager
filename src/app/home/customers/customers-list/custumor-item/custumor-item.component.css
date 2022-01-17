@@ -1,0 +1,26 @@
+i{
+    margin-left: 120px;
+}
+.son{
+    display: flex;
+    align-items: center;
+
+}
+img{
+    width: 30%;
+    margin-right: 1rem;
+}
+.pson{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}

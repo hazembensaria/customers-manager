@@ -1,0 +1,18 @@
+<div class="father">
+    <p><i class="fas fa-user"></i>customers</p>
+    <div class="son">
+        <div class="now">
+        <p  (click)="onselect('card')"><i class="fas fa-th-large" ></i>card view</p>
+        <p (click)="onselect('list')"><i class="fas fa-th-list"></i>list view</p>
+        <p (click)="onselect('map')"><i class="fas fa-map-marker-alt"></i>map view</p>
+        <p (click)="onclick('add')"><i class="fas fa-plus"></i>new customer</p>
+    </div>  
+    <div>
+        <label>filtrer</label>
+        <input type="text" [(ngModel)]="a">
+    </div> 
+    </div>
+
+  
+
+</div>

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <b>  ben saria hazem</b>
+    <form  #etudiantForm="ngForm" novalidate>
+   <div class="container">
+       <div class="father">
+           <h1>s'identifier </h1>
+           <div class="info">
+            <i class="fas fa-user" id="i0"></i>
+               <input  type="email" required #mail="ngModel" [class.is-invalid]="mail.invalid && mail.touched"  name="usermail" [(ngModel)]="user.mail">
+               <small  class="text-danger" [class.d-none]="mail.valid || mail.untouched">Le mail est obligatoire</small>
+               <i class="fas fa-unlock" id="i1"></i>
+               <input #password="ngModel" required type="password" name="password" placeholder="password" [(ngModel)]="user.password">
+               <small  class="text-danger" [class.d-none]="password.valid || password.untouched">Le mot de passe est obligatoire</small>
+               <!-- <input #role type="text" name="role" placeholder="role" [(ngModel)]="user.role"> -->
+               <div>
+                <button class="btn btn-primary"  (click)="onLoggedin()" type="button" [disabled]="etudiantForm.form.invalid  "> log in</button>
+                <button class="btn btn-primary"  (click)="onsignin()" type="button" [disabled]="etudiantForm.form.invalid  "> sign in</button>
+             
+               <!-- <button (click)="addUser(email.value,password.value,role.value)">s'inscrire</button> -->
+            </div>
+           </div>
+       
+           <div class="c1"></div>
+           <div class="c2"></div>
+           <div class="c3"></div>
+       </div>
+   </div>
+</form>
+
+</body>

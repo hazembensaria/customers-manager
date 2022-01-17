@@ -1,0 +1,3 @@
+<app-customer-header (featureselected)="onnavigate($event)"></app-customer-header>
+<app-customers-list *ngIf="loadedfeature === 'card'"></app-customers-list>
+<app-customers-card-list *ngIf="loadedfeature === 'list'"></app-customers-card-list>

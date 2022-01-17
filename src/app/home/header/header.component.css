@@ -1,0 +1,38 @@
+.containe{
+
+    display: flex;
+    
+    width: 50%;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width: 55px;
+    height: 55px;
+}
+.father{
+    color: white;
+    background: rgb(28, 116, 248);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.f1{
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    border-radius: 4px;
+    font-size: larger;
+}
+.f1:hover{
+    color: black;
+   
+    cursor: pointer;
+    background: white;
+}
+.son{
+    display: flex;
+    align-items: center;
+}
